@@ -1,0 +1,153 @@
+body{
+color: white;
+background-color: #1d1c1c;
+font-family: AdobeGaramondProRegular;
+}
+.navbar{
+margin-bottom: 0px;
+border-radius: 0px;
+min-height: 60px;
+background-color: #9c1a1a;
+color: #ffffff;
+font-size: 1.2em;
+border: 0;
+}
+.container-fluid{
+margin-top: 5px;
+}
+.navbar-brand{
+height: 60px;
+float: left;
+padding: 0 0 0 0;
+}
+.header-logo {
+height: 100%;
+}
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:active, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+background-color: white;
+}
+.navbar-inverse .navbar-toggle .icon-bar{
+background-color: black;
+}
+.navbar-inverse .navbar-nav li a {
+margin: 2px 5px;
+color: #dbdbdb;
+}
+.navbar-inverse .navbar-nav li a:hover {
+margin: 2px 5px;
+background-color: #c04232;
+border-radius: 10px;
+}
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+color: #000000;
+background-color: #ffffff;
+border-radius: 10px;
+}
+.carousel{
+background-color: #000000;
+}
+.item p{
+text-align: center;
+}
+.item p img{
+max-height: 800px;
+max-width: 100%;
+}
+.carousel-caption{
+top: 60%;
+transform: translateY(-50%);
+text-transform: uppercase;
+}
+.btn, btn:active, .btn:focus{
+border-radius: 25px;
+font-size: 18px;
+color: #ffffff;
+padding: 6px 12px;
+background-color: #000000;
+border: 2px solid #ffffff;
+}
+.btn:hover{
+color: #ffffff;
+background-color: #272727;
+border: 2px solid #ffffff;
+}
+.container{
+margin: 4% auto;
+}
+.row p{
+text-align: justify;
+font-size: 18px;
+}
+.tab{
+text-indent: 2em;
+}
+#icon {
+max-width: 500px;
+width: 100%;
+margin: 1% auto;
+}
+.hidden-clickable, .hidden-clickable:active, .hidden-clickable:focus{
+color: #ffffff;
+text-decoration: none;
+}
+.hidden-clickable:hover{
+color: #ffffff;
+}
+#hidden img{
+max-width: 200px;
+max-height: 200px;
+}
+footer {
+width: 100%;
+background-color: #9c1a1a;
+padding: 3%;
+color: white;
+font-family: Verdana; 
+}
+.fa, .fa:active, .fa:focus{
+margin: 10px 10px;
+padding: 10px 10px 10px 10px;
+font-size: 30px;
+color: white;
+text-decoration: none;
+}
+.fa:hover{
+text-decoration: none;
+background-color: white;
+border: 0px solid white;
+border-radius: 10px;
+}
+.fa-facebook:hover {
+color: #4267b2;
+}
+.fa-twitter:hover{
+color: #1da1f2;
+}
+.fa-google:hover{
+color: #db4437;
+}
+.fa-linkedin:hover{
+color: #0077B5;
+}
+.fa-youtube:hover{
+color: red;
+}
+.fa-envelope-open:hover{
+color: #0f50b3;
+}
+@media (max-width: 768px){
+.fa{
+    font-size: 20px;
+    padding: 10px;
+}
+.carousel-caption{
+    display: none;
+}
+#icon{
+    max-width: 300px;
+}
+}
+@font-face {
+font-family: AdobeGaramondProRegular;
+src: url('src/AdobeGaramondProRegular.ttf') format('truetype');
+}
