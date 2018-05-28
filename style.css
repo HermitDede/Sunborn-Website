@@ -10,7 +10,9 @@ min-height: 60px;
 background-color: #9c1a1a;
 color: #ffffff;
 font-size: 1.2em;
-border: 0;
+border: 2px solid white;
+font-family: Calibri;
+font-weight: bold;
 }
 .container-fluid{
 margin-top: 5px;
@@ -102,7 +104,8 @@ width: 100%;
 background-color: #9c1a1a;
 padding: 3%;
 color: white;
-font-family: Verdana; 
+font-family: Verdana;
+border: 2px solid white;
 }
 .fa, .fa:active, .fa:focus{
 margin: 10px 10px;
@@ -150,4 +153,16 @@ color: #0f50b3;
 @font-face {
 font-family: AdobeGaramondProRegular;
 src: url('src/AdobeGaramondProRegular.ttf') format('truetype');
+}
+#loading {
+    -webkit-animation: rotation 10s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
 }

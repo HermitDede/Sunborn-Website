@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="pal" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- My Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,14 +23,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img class="header-logo" src="img/Header_Logo_White.png"></a>
+        <a class="navbar-brand" href="home.html"><img class="header-logo" src="img/Header_Logo_White.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="home.html">Home</a></li>
           <li><a href="story.html">Story</a></li>
-          <li><a href="#">Characters & Items</a></li>
-          <li><a href="#">Gameplay</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="gameplay.html">Gameplay</a></li>
         </ul>
       </div>
     </div>
@@ -78,29 +83,15 @@
     </a>
   </div> <!--- End Slider -->
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h3>Powered by</h4>
-        <img src="img/Unity_Logo.png" id="icon">
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h3>Made for</h4>
-        <img src="img/OSs_Logo.png" id="icon">
-      </div>
-    </div>
-  </div>
-
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h3>About HoDT: Sunborn</h4>
-        <p class="tab">Heroes of a Distant Town: Sunborn is an adventure RPG which consists features to expand common target audience of rogue-like games. Rogue-Like games are typically video games which include randomly generated levels with permanent death rule which makes players start all over again from the very beginning of the game once they die. They are usually meant to be played by hardcore gamers who seek real challenge. As a result, casual gamers tend to stay away or get bored easily because of unforgiving mechanics of rogue-likes. These games have most of the time a shallow story and prevent players from feeling any kind of progress in the game once they die. Even for hardcore players, a game which is only about slaying enemies becomes boring quickly.</p>
-      </div>
-      <div class="col-md-6">
-        <br>
-        <img src="img/Sunborn-Logo-White.png" class="img-responsive">
-      </div>
+        <h2 style="border-bottom: 2px solid white; text-align: center; font-size: 48px">About HoDT: Sunborn</h2>
+        <div class="col-md-6">
+            <p class="tab">Heroes of a Distant Town: Sunborn is an adventure RPG which consists features to expand common target audience of rogue-like games. Rogue-Like games are typically video games which include randomly generated levels with permanent death rule which makes players start all over again from the very beginning of the game once they die. They are usually meant to be played by hardcore gamers who seek real challenge. As a result, casual gamers tend to stay away or get bored easily because of unforgiving mechanics of rogue-likes. These games have most of the time a shallow story and prevent players from feeling any kind of progress in the game once they die. Even for hardcore players, a game which is only about slaying enemies becomes boring quickly.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="img/Sunborn-Logo-White.png" class="img-responsive">
+        </div>
     </div>
     <div class="row">
       <div class="col-md-12">
@@ -148,15 +139,30 @@
       </div>
     </div>
   </div>
+
+    <div class="container text-center" style="font-family: Calibri">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h3>Powered by</h4>
+                <img src="img/Unity_Logo.png" id="icon">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h3>Made for</h4>
+                <img src="img/OSs_Logo.png" id="icon">
+            </div>
+        </div>
+    </div>  
   
   <footer class="container-fluid text-center">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <h2>Contact Us</h2>
           <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
-              
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
+          <img id="loading" src="img/Sun_White.png">
+        </div>
+        <div class="col-md-4">
           <h2>Social Media</h2>
           <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
           <a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a>
