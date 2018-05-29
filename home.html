@@ -13,6 +13,64 @@
 
   <!-- My Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .carousel{
+        background-color: #000000;
+    }
+    .item p{
+        text-align: center;
+    }
+    .item p img{
+        max-height: 800px;
+        max-width: 100%;
+    }
+    .carousel-caption{
+        top: 60%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+    }
+    .btn, btn:active, .btn:focus{
+        border-radius: 25px;
+        font-size: 18px;
+        color: #ffffff;
+        padding: 6px 12px;
+        background-color: #000000;
+        border: 2px solid #ffffff;
+    }
+    .btn:hover{
+        color: #ffffff;
+        background-color: #272727;
+        border: 2px solid #ffffff;
+    }
+    .container{
+        margin: 4% auto;
+    }
+    #icon {
+        max-width: 500px;
+        width: 100%;
+        margin: 1% auto;
+    }
+    .hidden-clickable, .hidden-clickable:active, .hidden-clickable:focus{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .hidden-clickable:hover{
+        color: #ffffff;
+    }
+    #hidden img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    @media (max-width: 768px){
+        .carousel-caption{
+            display: none;
+        }
+        #icon{
+            max-width: 300px;
+        }
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -29,14 +87,14 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="home.html">Home</a></li>
           <li><a href="story.html">Story</a></li>
-          <li><a href="features.html">Features</a></li>
+          <li><a href="character.html">Character</a></li>
           <li><a href="gameplay.html">Gameplay</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide animated fadeIn" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -83,7 +141,7 @@
     </a>
   </div> <!--- End Slider -->
 
-  <div class="container">
+  <div class="container animated fadeIn">
     <div class="row">
         <h2 style="border-bottom: 2px solid white; text-align: center; font-size: 48px">About HoDT: Sunborn</h2>
         <div class="col-md-6">
@@ -105,9 +163,9 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container animated fadeIn">
     <div class="row">
-      <h3><a class="hidden-clickable" href="#hidden" data-toggle="collapse">Do you know...</a></h3>
+      <h3><a class="hidden-clickable" href="#hidden" data-toggle="collapse">Did you know...</a></h3>
       <div id="hidden" class="collapse">
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <h3>RPG</h3>
@@ -140,30 +198,30 @@
     </div>
   </div>
 
-    <div class="container text-center" style="font-family: Calibri">
+    <div class="container text-center animated fadeIn" style="font-family: Calibri">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h3>Powered by</h4>
+                <h3>Made with</h4>
                 <img src="img/Unity_Logo.png" id="icon">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h3>Made for</h4>
+                <h3>Specially for</h4>
                 <img src="img/OSs_Logo.png" id="icon">
             </div>
         </div>
     </div>  
   
-  <footer class="container-fluid text-center">
+    <footer class="container-fluid text-center animated slideInUp">
       <div class="row">
-        <div class="col-md-4">
-          <h2>Contact Us</h2>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h3 class="footer-title">Contact Us</h3>
           <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
         </div>
-        <div class="col-md-4">
-          <img id="loading" src="img/Sun_White.png">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <img id="rotate-infinite" src="img/Sun_White.png">
         </div>
-        <div class="col-md-4">
-          <h2>Social Media</h2>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h3 class="footer-title">Social Media</h3>
           <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
           <a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a>
           <a target="_blank" href="https://plus.google.com/" class="fa fa-google"></a>

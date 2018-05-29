@@ -1,8 +1,23 @@
+
+/* Body & Body related */
 body{
-color: white;
-background-color: #1d1c1c;
-font-family: AdobeGaramondProRegular;
+    color: white;
+    background-color: #222222;
+    font-family: Fontin-Regular;
 }
+.row p{
+    text-align: justify;
+    font-size: 18px;
+    width: 100%;
+}
+.tab{
+    text-indent: 2em;
+}
+.container{
+    max-width: 90%;
+}
+
+/* Header = Navigation Bar */
 .navbar{
 margin-bottom: 0px;
 border-radius: 0px;
@@ -45,71 +60,22 @@ color: #000000;
 background-color: #ffffff;
 border-radius: 10px;
 }
-.carousel{
-background-color: #000000;
-}
-.item p{
-text-align: center;
-}
-.item p img{
-max-height: 800px;
-max-width: 100%;
-}
-.carousel-caption{
-top: 60%;
-transform: translateY(-50%);
-text-transform: uppercase;
-}
-.btn, btn:active, .btn:focus{
-border-radius: 25px;
-font-size: 18px;
-color: #ffffff;
-padding: 6px 12px;
-background-color: #000000;
-border: 2px solid #ffffff;
-}
-.btn:hover{
-color: #ffffff;
-background-color: #272727;
-border: 2px solid #ffffff;
-}
-.container{
-margin: 4% auto;
-}
-.row p{
-text-align: justify;
-font-size: 18px;
-}
-.tab{
-text-indent: 2em;
-}
-#icon {
-max-width: 500px;
-width: 100%;
-margin: 1% auto;
-}
-.hidden-clickable, .hidden-clickable:active, .hidden-clickable:focus{
-color: #ffffff;
-text-decoration: none;
-}
-.hidden-clickable:hover{
-color: #ffffff;
-}
-#hidden img{
-max-width: 200px;
-max-height: 200px;
-}
+
+/* Footer */
 footer {
 width: 100%;
 background-color: #9c1a1a;
-padding: 3%;
+padding: 1%;
 color: white;
 font-family: Verdana;
 border: 2px solid white;
 }
+.footer-title{
+    font-size: 24px;
+}
 .fa, .fa:active, .fa:focus{
-margin: 10px 10px;
-padding: 10px 10px 10px 10px;
+margin: 4px;
+padding: 8px;
 font-size: 30px;
 color: white;
 text-decoration: none;
@@ -138,26 +104,70 @@ color: red;
 .fa-envelope-open:hover{
 color: #0f50b3;
 }
-@media (max-width: 768px){
-.fa{
-    font-size: 20px;
-    padding: 10px;
+
+/* Media */
+@media(max-width: 1050px){
+    #rotate-infinite{
+        width: 150px;
+    }
+    .fa, .fa:active, .fa:focus{
+        font-size: 25px;
+        margin: 2px;
+    }
+    .footer-title{
+        font-size: 20px;
+    }
 }
-.carousel-caption{
-    display: none;
+@media(max-width: 768px){
+    .fa, .fa:active, .fa:focus{
+        font-size: 20px;
+    }
+    .footer-title{
+        font-size: 16px;
+    }
+    #rotate-infinite{
+        width: 120px;
+    }
+    .footer-title{
+        display: none;
+    }
 }
-#icon{
-    max-width: 300px;
-}
-}
-@font-face {
-font-family: AdobeGaramondProRegular;
-src: url('src/AdobeGaramondProRegular.ttf') format('truetype');
-}
-#loading {
-    -webkit-animation: rotation 10s infinite linear;
+@media(max-width: 600px){
+    .fa, .fa:active, .fa:focus{
+        padding: 6px;
+    }
+    #rotate-infinite{
+        width: 100px;
+    }
 }
 
+/* Fonts  */
+@font-face {
+    font-family: AdobeGaramondProRegular;
+    src: url('src/AdobeGaramondProRegular.ttf') format('truetype');
+}
+@font-face {
+    font-family: Fontin-Bold;
+    src: url('src/Fontin-Bold.tff') format('truetype');
+}
+@font-face {
+    font-family: Fontin-Italic;
+    src: url('src/Fontin-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: Fontin-Regular;
+    src: url('src/Fontin-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: Fontin-SmallCaps;
+    src: url('src/Fontin-SmallCaps.ttf') format('truetype');
+}
+                
+
+/* Animation - Rotate */
+#rotate-infinite {
+    -webkit-animation: rotation 10s infinite linear;
+}
 @-webkit-keyframes rotation {
     from {
             -webkit-transform: rotate(0deg);

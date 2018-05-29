@@ -13,6 +13,44 @@
 
   <!-- My Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .nav-tabs .tab-item a{
+      color: white;
+      font-size: 24px;
+      font-family: Fontin-SmallCaps;
+    }
+    .nav-tabs .tab-item a:hover{
+      color: #464646;
+      background-color: #d6d6d6;
+    }
+    .nav-tabs .tab-item a:active, .nav-tabs .tab-item a:focus{
+      color: #464646;
+      background-color: #ffffff;
+    }
+    .tab-content{
+      display: none;
+    }
+    div .container{
+      width: auto;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .tab-content.container.row{
+      /* width: 100%; */
+    }
+    .tab-content.active{
+      display: block;
+      border: 2px solid white;
+      padding: 10px 10px;
+    }
+    #p-horizontal{display: block;}
+    #p-vertical{display: none;}
+    @media (max-width: 650px){
+      #p-horizontal{display: none;}
+      #p-vertical{display: block;}
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -35,15 +73,63 @@
       </div>
     </div>
   </nav>
-  
-  <footer class="container-fluid text-center">
+
+  <div style="margin:3% 3%">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="tab-item active"  role="presentation" rel="tab-content-1">
+          <a href="#tab-content-1">Race</a>
+        </li>
+        <li class="tab-item" role="presentation" rel="tab-content-2">
+          <a href="#tab-content-2">Class</a>
+        </li>
+        <!-- <li class="tab-item" role="presentation" rel="tab-content-3">
+          <a href="#tab-content-3">Equipment</a>
+        </li> -->
+      </ul>
+
+      <div id="tab-content-1" class="tab-content active animated fadeIn">
+          <div class="container">
+            <div class="row">
+              <!-- <div class="col-md-4">
+                <p style="text-align: center;"><img src="img/race_1.png" style="max-width: 300px; width:100%"></p>
+              </div> -->
+              <div class="col-md-4">
+                <p class="tab">In HoDT: Sunborn, players can choose a race for their characters which gives some special benefits depending on the race chosen. Each race has advantages on various conditions and sometimes has disadvantages. Players should decide carefully by also taking consider of their chosen class for the character. Currently, the game includes 4 races for characters</p>
+                <p style="text-align: center;">
+                    Character Sprites 
+                    <br>
+                    <img src="img/Races.png" style="max-width: 260px; width:100%; border: 2px solid white;">
+                </p>
+              </div>
+              <div class="col-md-8">
+                <p id="p-horizontal" style="text-align: center;"><img src="img/race_1-2_horizontal.png" style="width:100%"></p>
+                <p id="p-vertical" style="text-align: center;"><img src="img/race_1-2_vertical.png" style="width:100%; max-width: 300px;"></p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              
+            </div>
+          </div>
+      </div>
+    
+      <div id="tab-content-2" class="tab-content">
+          Content of second tab
+      </div>
+    
+      <div id="tab-content-3" class="tab-content">
+              Content of third tab
+          </div>
+  </div>
+
+  <footer class="container-fluid text-center animated slideInUp">
       <div class="row">
         <div class="col-md-4">
           <h2>Contact Us</h2>
           <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
         </div>
         <div class="col-md-4">
-          <img id="loading" src="img/Sun_White.png">
+          <img id="rotate-infinite" src="img/Sun_White.png">
         </div>
         <div class="col-md-4">
           <h2>Social Media</h2>
@@ -58,5 +144,27 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <script>
+          $("li").click(function(){
+            if(this.classList == "")
+              return;
+            var tabItems = document.getElementsByClassName("tab-item");
+            for (let index = 0; index < tabItems.length; index++) {
+              tabItems[index].classList.remove("active");
+            }
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (let index = 0; index < tabContents.length; index++) {
+              tabContents[index].classList.remove("active");
+              tabContents[index].classList.remove("animated");
+              tabContents[index].classList.remove("fadeIn");
+            }
+            this.classList.add("active");
+            var targetID = $(this).attr("rel");
+            document.getElementById(targetID).classList += " active animated fadeIn";
+          });
+        </script>
 </body>
 </html>
