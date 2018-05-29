@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Heroes of a Distant Town: Sunborn</title>
   <meta charset="utf-8">
@@ -13,7 +14,38 @@
 
   <!-- My Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    p img {
+      border: 1px solid white;
+      max-width: 100%;
+    }
+
+    .p-special-right {
+      text-align: right !important;
+    }
+
+    .p-special-left {
+      text-align: left !important;
+    }
+
+    .row-special {
+      margin: 0px 25% 0px 10%;
+      max-width: 75%;
+    }
+
+    @media (max-width: 768px) {
+      .p-special-left,
+      .p-special-right {
+        text-align: center !important;
+      }
+      .row-special {
+        margin: 0px 20% 0px 0px;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -23,40 +55,148 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="home.html"><img class="header-logo" src="img/Header_Logo_White.png"></a>
+        <a class="navbar-brand" href="home.html">
+          <img class="header-logo" src="img/Header_Logo_White.png">
+        </a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="story.html">Story</a></li>
-          <li><a href="character.html">Character</a></li>
-          <li class="active"><a href="gameplay.html">Gameplay</a></li>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="story.html">Story</a>
+          </li>
+          <li>
+            <a href="character.html">Character</a>
+          </li>
+          <li class="active">
+            <a href="gameplay.html">Gameplay</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-  <footer class="container-fluid text-center animated slideInUp">
-      <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-4">
-              <h3 class="footer-title">Contact Us</h3>
-              <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4">
-              <img id="rotate-infinite" src="img/Sun_White.png">
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4">
-              <h3 class="footer-title">Social Media</h3>
-              <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
-              <a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a>
-              <a target="_blank" href="https://plus.google.com/" class="fa fa-google"></a>
-              <a target="_blank" href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-              <a target="_blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
-          </div>
+  <div class="container animated fadeIn">
+    <h1 style="text-align: left; border-bottom: 2px solid white; font-size: 48px">Equipment System</h1>
+    <div class="row">
+      <p class="tab">Characters will have 10 slots for equipment; Head, Necklace, Body, Right Hand, Left Hand, Glove, Belt, Leggings, Boots
+        and 2 ring slots. In town, basic items can be purchased for these slots, but good quality equipment will randomly
+        generated and placed on each level. Equipment will have quality types such as common, uncommon, rare, unique and
+        legendary. Artifacts and relics will have same quality types and depending on the quality, they can be sold for more
+        money or displayed for more tourist attractions.</p>
+
+      <br>
+      <p style="text-align: center;">
+        <a href="img/CharPage.png" target="_blank">
+          <img src="img/CharPage.png" style="max-height: 600px;">
+        </a>
+      </p>
+      <br>
+
+      <p class="tab">Current alpha version includes 3 types of rarities; Common, Uncommon, Rare. Common equipment has not extra benefits,
+        but uncommon and rare equipment has various number of benefits depending on the rarity. Each benefit coming from
+        equipment also changes values depending on the the level of the equipment and the chance factor during the generation.
+        As a result, seeing exactly same item is almost impossible on further levels. Below, you can see the same piece of
+        item with different benefits depending on the rarity.</p>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <p style="text-align: center">
+          <img src="img/ItemCommon.png" style="max-height: 200px;">
+        </p>
       </div>
+      <div class="col-md-4">
+        <p style="text-align: center">
+          <img src="img/ItemUncommon.png" style="max-height: 200px;">
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p style="text-align: center">
+          <img src="img/ItemRare.png" style="max-height: 200px;">
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <p class="tab">Also, you can see another example below to see how much different two same type rare item can be.</p>
+      <p style="text-align: center">
+        <img src="img/BootsRare_1.png" style="max-height: 200px;">
+        <img src="img/BootsRare_2.png" style="max-height: 200px;">
+      </p>
+    </div>
+
+    <h1 style="text-align: right; border-bottom: 2px solid white; font-size: 48px">Battle System</h1>
+    <div class="row">
+      <p class="tab">Exploring and fighting system will be turn-based. Once the player makes an action, one turn will pass for player and
+        every enemy on the map at same time. After every turn, the player will see feedback visually and via game log about
+        the turn such as damages done on himself or enemies, who dies or disappears etc.</p>
+
+      <p class="tab">
+        If an enemy gets into sight, battle mode turns on and shows available actions with different colors such as blue means skipping
+        the turn, red means attack and green means move to tile selected. Below, you can see an example of it.
+      </p>
+      <p style="text-align: center">
+        <img src="img/battle.png">
+      </p>
+    </div>
+
+    <div class="row">
+      <p class="tab">
+        Also depending on the chosen skill, available tiles to take an action changes. For example, for the skill Cleave which belongs
+        to Warrior class example can be seen below.
+      </p>
+    </div>
+    <div class="row row-special">
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <p style="text-align: right">
+          <img src="img/Cleave.png" style="max-width: 64px; border: 3px solid #b09628;">
+        </p>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <p style="display: inline;">Causes a melee attack which deals a damage in an area in front of the warrior.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <p class="p-special-right">
+          <img src="img/skill_1.png">
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <p class="p-special-left">
+          <img src="img/skill_2.png">
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid text-center animated slideInUp">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h3 class="footer-title">Contact Us</h3>
+        <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <img id="rotate-infinite" src="img/Sun_White.png">
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h3 class="footer-title">Social Media</h3>
+        <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a target="_blank" href="https://plus.google.com/" class="fa fa-google"></a>
+        <a target="_blank" href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <a target="_blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      </div>
+    </div>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+
+  </script>
 </body>
+
 </html>

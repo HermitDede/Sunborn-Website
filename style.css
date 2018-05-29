@@ -25,7 +25,8 @@ min-height: 60px;
 background-color: #9c1a1a;
 color: #ffffff;
 font-size: 1.2em;
-border: 2px solid white;
+border: 0px;
+border-bottom: 2px solid white;
 font-family: Calibri;
 font-weight: bold;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Heroes of a Distant Town: Sunborn</title>
   <meta charset="utf-8">
@@ -15,10 +16,12 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    .nav-tabs{
+    .nav-tabs {
       border-bottom: 2px solid white;
     }
-    .nav-tabs .tab-item a, .nav-tabs .tab-item a:hover{
+
+    .nav-tabs .tab-item a,
+    .nav-tabs .tab-item a:hover {
       color: white;
       background-color: #9c9c9c4d;
       border: 1px solid #9c9c9c4d;
@@ -28,38 +31,69 @@
       border-top-left-radius: 15px;
       padding: 5px 50px 5px 50px;
     }
+
     /* Delete ".nav-tabs .tab-item a:hover" from the style above and uncomment the style below for hover animation on tabs
     /* .nav-tabs .tab-item a:hover{
       color: #464646;
       background-color: #a0a0a0;
       border: 1px solid #a0a0a0;
     } */
-    .nav-tabs .tab-item a:active, .nav-tabs .tab-item a:focus{
+
+    .nav-tabs .tab-item a:active,
+    .nav-tabs .tab-item a:focus {
       color: #464646;
       background-color: #ffffff;
       border: 1px solid #ffffff;
     }
-    .tab-content{
+
+    .tab-content {
       display: none;
     }
-    div .container{
+
+    div .container {
       width: auto;
       margin-right: 0px;
       margin-left: 0px;
     }
-    .tab-content.active{
+
+    .tab-content.active {
       display: block;
       border: 2px solid white;
       padding: 3% 3%;
     }
-    #p-horizontal{display: block;}
-    #p-vertical{display: none;}
-    @media (max-width: 850px){
-      #p-horizontal{display: none;}
-      #p-vertical{display: block;}
+
+    #p-horizontal {
+      display: block;
+    }
+
+    #p-vertical {
+      display: none;
+    }
+
+    @media (max-width: 850px) {
+      #p-horizontal {
+        display: none;
+      }
+      #p-vertical {
+        display: block;
+      }
+    }
+
+    @media (max-width: 500px) {
+      #p-horizontal {
+        display: none;
+      }
+      #p-vertical {
+        display: block;
+      }
+      .nav-tabs .tab-item a,
+      .nav-tabs .tab-item a:hover {
+        padding: 5px 30px 5px 30px;
+      }
     }
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -69,14 +103,24 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="home.html"><img class="header-logo" src="img/Header_Logo_White.png"></a>
+        <a class="navbar-brand" href="home.html">
+          <img class="header-logo" src="img/Header_Logo_White.png">
+        </a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="story.html">Story</a></li>
-          <li class="active"><a href="character.html">Character</a></li>
-          <li><a href="gameplay.html">Gameplay</a></li>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="story.html">Story</a>
+          </li>
+          <li class="active">
+            <a href="character.html">Character</a>
+          </li>
+          <li>
+            <a href="gameplay.html">Gameplay</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -85,101 +129,132 @@
   <div class="container animated fadeIn" style="margin-bottom: 3%;">
     <h1 style="text-align:center; border-bottom: 2px solid white; font-size: 48px">Character</h1>
     <div class="row">
-        <p class="tab">At the beginning, there will be only one character which is the main protagonist. Rest will be random characters created by some variables. Because of working solo on this project, add background stories to all citizens in the town seemed secondary. If the game development finishes, there won’t be any reason to add more characters.</p>
+      <p class="tab">At the beginning, there will be only one character which is the main protagonist. Rest will be random characters created
+        by some variables. Because of working solo on this project, add background stories to all citizens in the town seemed
+        secondary. If the game development finishes, there won’t be any reason to add more characters.</p>
     </div>
     <ul>
-        <li><h4>Commander < You ></h4></li>
-        <div class="row">
-            <p class="tab">Protagonist of the game. < You > are a commander assigned to investigate a mysterious event occurred in a distant island. However, because of the situation, < You > find yourself as governor of a town called Sunborn and instead of investigating the event by yourself, < You > start training and sending adventurers.</p> 
-        </div>
-        <li><h4>< Adventurer ></h4></li>
-        <div class="row">
-            <p class="tab">Adventurers are randomized characters which will be played by the player if they choose them. Their random attributes will be background story, name, age, gender, race, class, status points, level and traits. Background story, name, age, gender will have no effect on gameplay. They are only for role playing elements. However, race, class, status points, level and traits will directly affect the characters’ strength and behavior.</p>    
-        </div>
+      <li>
+        <h4>Commander &#60;You&#62;</h4>
+      </li>
+      <div class="row">
+        <p class="tab">Protagonist of the game. &#60;You&#62; are a commander assigned to investigate a mysterious event occurred in a distant
+          island. However, because of the situation, &#60;You&#62; find yourself as governor of a town called Sunborn and
+          instead of investigating the event by yourself, &#60;You&#62; start training and sending adventurers.</p>
+      </div>
+      <li>
+        <h4>&#60;Adventurer&#62;</h4>
+      </li>
+      <div class="row">
+        <p class="tab">Adventurers are randomized characters which will be played by the player if they choose them. Their random attributes
+          will be background story, name, age, gender, race, class, status points, level and traits. Background story, name,
+          age, gender will have no effect on gameplay. They are only for role playing elements. However, race, class, status
+          points, level and traits will directly affect the characters’ strength and behavior.</p>
+      </div>
     </ul>
     <br>
     <div class="row">
-        <p class="tab">Currently, the alpha version of the game allows to choose race and class for the character. The options are few, but mechanics will be similar to the release version of the game. You can check the character's race and class system of game's alpha version.</p>    
+      <p class="tab">Currently, the alpha version of the game allows to choose race and class for the character. The options are few, but
+        mechanics will be similar to the release version of the game. You can check the character's race and class system
+        of game's alpha version.</p>
     </div>
     <ul class="nav nav-tabs">
-        <li class="tab-item active" role="presentation" rel="tab-content-1" style="margin-right: 20px;">
-            <a href="javascript:void(0)">Race</a>
-        </li>
-        <li class="tab-item" role="presentation" rel="tab-content-2">
-            <a href="javascript:void(0)">Class</a>
-        </li>
+      <li class="tab-item active" role="presentation" rel="tab-content-1" style="margin-right: 20px;">
+        <a href="javascript:void(0)">Race</a>
+      </li>
+      <li class="tab-item" role="presentation" rel="tab-content-2">
+        <a href="javascript:void(0)">Class</a>
+      </li>
     </ul>
 
 
-      <div id="tab-content-1" class="tab-content active animated fadeIn">
-        <div class="row" style="margin:1% 1%">
-            <div class="col-md-4">
-            <p class="tab">In HoDT: Sunborn, players can choose a race for their characters which gives some special benefits depending on the race chosen. Each race has advantages on various conditions and sometimes has disadvantages. Players should decide carefully by also taking consider of their chosen class for the character. Currently, the game includes 4 races for characters.</p>
-            <p style="text-align: center;">
-                Character Sprites 
-                <br>
-                <img src="img/Races.png" style="max-width: 260px; width:100%; border: 2px solid white;">
-            </p>
-            </div>
-            <div class="col-md-8">
-            <p id="p-horizontal" style="text-align: center;"><img src="img/race_horizontal.png" style="width:100%"></p>
-            <p id="p-vertical" style="text-align: center;"><img src="img/race_vertical.png" style="width:100%; max-width: 300px;"></p>
-            </div>
+    <div id="tab-content-1" class="tab-content active animated fadeIn">
+      <div class="row" style="margin:1% 1%">
+        <div class="col-md-4">
+          <p class="tab">In HoDT: Sunborn, players can choose a race for their characters which gives some special benefits depending on
+            the race chosen. Each race has advantages on various conditions and sometimes has disadvantages. Players should
+            decide carefully by also taking consider of their chosen class for the character. Currently, the game includes
+            4 races for characters.</p>
+          <p style="text-align: center;">
+            Character Sprites
+            <br>
+            <img src="img/Races.png" style="max-width: 260px; width:100%; border: 2px solid white;">
+          </p>
+        </div>
+        <div class="col-md-8">
+          <p id="p-horizontal" style="text-align: center;">
+            <img src="img/race_horizontal.png" style="width:100%">
+          </p>
+          <p id="p-vertical" style="text-align: center;">
+            <img src="img/race_vertical.png" style="width:100%; max-width: 300px;">
+          </p>
         </div>
       </div>
-    
-      <div id="tab-content-2" class="tab-content">
-        <div class="row" style="margin:1% 1%">
-            <div>
-                <p class="tab">Character class defines character's special abilities and its aptitudes for certain weapons or stats. It is not a must to choose a race or improve stats depending on the character's class. Players are free to make any kind of combination with status points, races and classes. Each class has 5 unique skills which has different kind of behaviours and usage ways. Some skills might add permanent effects while some skills casted upon enemies to deal damage. Players may see the explanation of each skill by hovering the mouse on to the skill. Current version only includes one class which is warrior, however the release version is planned to include at least 4 classes. Below, you can see the class selection case of the alpha version.</p>
-            </div>
-        </div>
-        <div class="row">
-            <p id="p-horizontal" style="text-align: center;"><img src="img/class_horizontal.png" style="width:100%"></p>
-            <p id="p-vertical" style="text-align: center;"><img src="img/class_vertical.png" style="width:100%; max-width: 300px;"></p>
+    </div>
+
+    <div id="tab-content-2" class="tab-content">
+      <div class="row" style="margin:1% 1%">
+        <div>
+          <p class="tab">Character class defines character's special abilities and its aptitudes for certain weapons or stats. It is not
+            a must to choose a race or improve stats depending on the character's class. Players are free to make any kind
+            of combination with status points, races and classes. Each class has 5 unique skills which has different kind
+            of behaviours and usage ways. Some skills might add permanent effects while some skills casted upon enemies to
+            deal damage. Players may see the explanation of each skill by hovering the mouse on to the skill. Current version
+            only includes one class which is warrior, however the release version is planned to include at least 4 classes.
+            Below, you can see the class selection case of the alpha version.</p>
         </div>
       </div>
+      <div class="row">
+        <p id="p-horizontal" style="text-align: center;">
+          <img src="img/class_horizontal.png" style="width:100%">
+        </p>
+        <p id="p-vertical" style="text-align: center;">
+          <img src="img/class_vertical.png" style="width:100%; max-width: 300px;">
+        </p>
+      </div>
+    </div>
   </div>
 
-    <footer class="container-fluid text-center animated slideInUp">
-        <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <h3 class="footer-title">Contact Us</h3>
-                <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <img id="rotate-infinite" src="img/Sun_White.png">
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <h3 class="footer-title">Social Media</h3>
-                <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a>
-                <a target="_blank" href="https://plus.google.com/" class="fa fa-google"></a>
-                <a target="_blank" href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-                <a target="_blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
-            </div>
-        </div>
-    </footer>
+  <footer class="container-fluid text-center animated slideInUp">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h3 class="footer-title">Contact Us</h3>
+        <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <img id="rotate-infinite" src="img/Sun_White.png">
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h3 class="footer-title">Social Media</h3>
+        <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a target="_blank" href="https://plus.google.com/" class="fa fa-google"></a>
+        <a target="_blank" href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <a target="_blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-          $("li").click(function(){
-            if(this.classList != "tab-item")
-              return;
-            var tabItems = document.getElementsByClassName("tab-item");
-            for (let index = 0; index < tabItems.length; index++) {
-              tabItems[index].classList.remove("active");
-            }
-            var tabContents = document.getElementsByClassName("tab-content");
-            for (let index = 0; index < tabContents.length; index++) {
-              tabContents[index].classList.remove("active", "animated", "fadeIn");
-            }
-            this.classList.add("active");
-            var targetID = $(this).attr("rel");
-            document.getElementById(targetID).classList.add("active", "animated", "fadeIn");
-          });
-        </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $("li").click(function () {
+      if (this.classList != "tab-item")
+        return;
+      var tabItems = document.getElementsByClassName("tab-item");
+      for (let index = 0; index < tabItems.length; index++) {
+        tabItems[index].classList.remove("active");
+      }
+      var tabContents = document.getElementsByClassName("tab-content");
+      for (let index = 0; index < tabContents.length; index++) {
+        tabContents[index].classList.remove("active", "animated", "fadeIn");
+      }
+      this.classList.add("active");
+      var targetID = $(this).attr("rel");
+      document.getElementById(targetID).classList.add("active", "animated", "fadeIn");
+    });
+  </script>
 </body>
+
 </html>

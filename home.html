@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Heroes of a Distant Town: Sunborn</title>
   <meta charset="utf-8">
@@ -15,63 +16,79 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    .carousel{
-        background-color: #000000;
+    .carousel {
+      background-color: #000000;
     }
-    .item p{
-        text-align: center;
+
+    .item p {
+      text-align: center;
     }
-    .item p img{
-        max-height: 800px;
-        max-width: 100%;
+
+    .item p img {
+      max-height: 800px;
+      max-width: 100%;
     }
-    .carousel-caption{
-        top: 60%;
-        transform: translateY(-50%);
-        text-transform: uppercase;
+
+    .carousel-caption {
+      top: 60%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
     }
-    .btn, btn:active, .btn:focus{
-        border-radius: 25px;
-        font-size: 18px;
-        color: #ffffff;
-        padding: 6px 12px;
-        background-color: #000000;
-        border: 2px solid #ffffff;
+
+    .btn,
+    btn:active,
+    .btn:focus {
+      border-radius: 25px;
+      font-size: 18px;
+      color: #ffffff;
+      padding: 6px 12px;
+      background-color: #000000;
+      border: 2px solid #ffffff;
     }
-    .btn:hover{
-        color: #ffffff;
-        background-color: #272727;
-        border: 2px solid #ffffff;
+
+    .btn:hover {
+      color: #ffffff;
+      background-color: #272727;
+      border: 2px solid #ffffff;
     }
-    .container{
-        margin: 4% auto;
+
+    .container {
+      margin: 4% auto;
     }
+
     #icon {
-        max-width: 500px;
-        width: 100%;
-        margin: 1% auto;
+      max-width: 500px;
+      width: 100%;
+      margin: 1% auto;
     }
-    .hidden-clickable, .hidden-clickable:active, .hidden-clickable:focus{
-        color: #ffffff;
-        text-decoration: none;
+
+    .hidden-clickable,
+    .hidden-clickable:active,
+    .hidden-clickable:focus {
+      color: #ffffff;
+      text-decoration: none;
     }
-    .hidden-clickable:hover{
-        color: #ffffff;
+
+    .hidden-clickable:hover {
+      color: #ffffff;
     }
-    #hidden img{
-        max-width: 200px;
-        max-height: 200px;
+
+    #hidden img {
+      max-width: 200px;
+      max-height: 200px;
     }
-    @media (max-width: 768px){
-        .carousel-caption{
-            display: none;
-        }
-        #icon{
-            max-width: 300px;
-        }
+
+    @media (max-width: 768px) {
+      .carousel-caption {
+        display: none;
+      }
+      #icon {
+        max-width: 300px;
+      }
     }
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -81,14 +98,24 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="home.html"><img class="header-logo" src="img/Header_Logo_White.png"></a>
+        <a class="navbar-brand" href="home.html">
+          <img class="header-logo" src="img/Header_Logo_White.png">
+        </a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="home.html">Home</a></li>
-          <li><a href="story.html">Story</a></li>
-          <li><a href="character.html">Character</a></li>
-          <li><a href="gameplay.html">Gameplay</a></li>
+          <li class="active">
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="story.html">Story</a>
+          </li>
+          <li>
+            <a href="character.html">Character</a>
+          </li>
+          <li>
+            <a href="gameplay.html">Gameplay</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -107,7 +134,9 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <p><img src="img/logo.png"></p>
+        <p>
+          <img src="img/logo.png">
+        </p>
         <!-- <div class="carousel-caption">
           <h2>get to know bootstrap</h2>
           <br>
@@ -115,19 +144,29 @@
         </div> -->
       </div>
       <div class="item">
-        <p><img src="img/menu.png"></p>
+        <p>
+          <img src="img/menu.png">
+        </p>
       </div>
       <div class="item">
-        <p><img src="img/Create Character.png"></p>
+        <p>
+          <img src="img/Create Character.png">
+        </p>
       </div>
       <div class="item">
-          <p><img src="img/HUD.png"></p>
+        <p>
+          <img src="img/HUD.png">
+        </p>
       </div>
       <div class="item">
-          <p><img src="img/Character Interface.png"></p>
+        <p>
+          <img src="img/Character Interface.png">
+        </p>
       </div>
       <div class="item">
-          <p><img src="img/Map.png"></p>
+        <p>
+          <img src="img/Map.png">
+        </p>
       </div>
     </div>
     <!-- Slider Controls -->
@@ -136,102 +175,126 @@
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">next</span>
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">next</span>
     </a>
-  </div> <!--- End Slider -->
+  </div>
+  <!--- End Slider -->
 
   <div class="container animated fadeIn">
     <div class="row">
-        <h2 style="border-bottom: 2px solid white; text-align: center; font-size: 48px">About HoDT: Sunborn</h2>
-        <div class="col-md-6">
-            <p class="tab">Heroes of a Distant Town: Sunborn is an adventure RPG which consists features to expand common target audience of rogue-like games. Rogue-Like games are typically video games which include randomly generated levels with permanent death rule which makes players start all over again from the very beginning of the game once they die. They are usually meant to be played by hardcore gamers who seek real challenge. As a result, casual gamers tend to stay away or get bored easily because of unforgiving mechanics of rogue-likes. These games have most of the time a shallow story and prevent players from feeling any kind of progress in the game once they die. Even for hardcore players, a game which is only about slaying enemies becomes boring quickly.</p>
-        </div>
-        <div class="col-md-6">
-            <img src="img/Sunborn-Logo-White.png" class="img-responsive">
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <p class="tab">That’s why I wanted to create a game which can be challenging, intriguing and fun for hardcore and casual gamers at the same time. In order to achieve this, first of all, addition to traditional RPG elements of rogue-like games, a deep story must be implemented. Later, the game must be made forgiving for casual players by adding base building system which will boost players’ each run further as they play. Finally, small additions like puzzles, gambling, discovery system etc. to prevent the game becoming only about killing enemies.</p>
+      <h2 style="border-bottom: 2px solid white; text-align: center; font-size: 48px">About HoDT: Sunborn</h2>
+      <div class="col-md-6">
+        <p class="tab">Heroes of a Distant Town: Sunborn is an adventure RPG which consists features to expand common target audience of
+          rogue-like games. Rogue-Like games are typically video games which include randomly generated levels with permanent
+          death rule which makes players start all over again from the very beginning of the game once they die. They are
+          usually meant to be played by hardcore gamers who seek real challenge. As a result, casual gamers tend to stay
+          away or get bored easily because of unforgiving mechanics of rogue-likes. These games have most of the time a shallow
+          story and prevent players from feeling any kind of progress in the game once they die. Even for hardcore players,
+          a game which is only about slaying enemies becomes boring quickly.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/Sunborn-Logo-White.png" class="img-responsive">
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p class="tab">Heroes of a Distant Town: Sunborn is a mainly 2D top-down game about sending adventurers from a random pool into unknown. After each run, the player will be able to develop and manage the town in order to boost his/her next run. Even if the player let his/her chosen adventurer die, he/she will be able to develop the town. The feeling of progress will be achieved by this means until the player solves the mysteries of the pit and concludes the game. </p>
+        <p class="tab">That’s why I wanted to create a game which can be challenging, intriguing and fun for hardcore and casual gamers
+          at the same time. In order to achieve this, first of all, addition to traditional RPG elements of rogue-like games,
+          a deep story must be implemented. Later, the game must be made forgiving for casual players by adding base building
+          system which will boost players’ each run further as they play. Finally, small additions like puzzles, gambling,
+          discovery system etc. to prevent the game becoming only about killing enemies.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="tab">Heroes of a Distant Town: Sunborn is a mainly 2D top-down game about sending adventurers from a random pool into
+          unknown. After each run, the player will be able to develop and manage the town in order to boost his/her next
+          run. Even if the player let his/her chosen adventurer die, he/she will be able to develop the town. The feeling
+          of progress will be achieved by this means until the player solves the mysteries of the pit and concludes the game.
+          </p>
       </div>
     </div>
   </div>
 
   <div class="container animated fadeIn">
     <div class="row">
-      <h3><a class="hidden-clickable" href="#hidden" data-toggle="collapse">Did you know...</a></h3>
+      <h3>
+        <a class="hidden-clickable" href="#hidden" data-toggle="collapse">Did you know...</a>
+      </h3>
       <div id="hidden" class="collapse">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h3>RPG</h3>
-            <p class="tab"> Role-Playin Games are games in which players assume the roles of characters in a fictional setting. Players take responsibility for acting out these roles within a narrative, either through literal acting or through a process of structured decision-making of character development. Actions taken within many games succeed or fail according to a formal system of rules and guidelines. </p>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h3>RPG</h3>
+          <p class="tab"> Role-Playin Games are games in which players assume the roles of characters in a fictional setting. Players take
+            responsibility for acting out these roles within a narrative, either through literal acting or through a process
+            of structured decision-making of character development. Actions taken within many games succeed or fail according
+            to a formal system of rules and guidelines. </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <br>
+          <p style="text-align: center">
             <br>
-            <p style="text-align: center">
-              <br>
-              <br>
-              <img src="img/Lotr_FirstEdition.gif">
-              <h4 style="text-align: center">RPG genre became popular after</h4>
-              <h4 style="text-align: center">J.R.R. Tolkien's The Lord of the Rings</h4>
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h3>Rogue-Like</h3>
-            <p class="tab">The genre called "Rogue-Like" actually comes from a game which was made at 1980 called "Rogue". After its huge success, games which have similar elements called as Rogue-Like games. </p>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <br>
-            <p style="text-align: center">
-              <br>
-              <br>
-              <a target="_blank" href="img/Rogue.png"><img src="img/Rogue.png"></a>
-              <h4 style="text-align: center">Rogue (1980)</h4>
-            </p>
-          </div>
+            <img src="img/Lotr_FirstEdition.gif">
+            <h4 style="text-align: center">RPG genre became popular after</h4>
+            <h4 style="text-align: center">J.R.R. Tolkien's The Lord of the Rings</h4>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h3>Rogue-Like</h3>
+          <p class="tab">The genre called "Rogue-Like" actually comes from a game which was made at 1980 called "Rogue". After its huge
+            success, games which have similar elements called as Rogue-Like games. </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <br>
+          <p style="text-align: center">
+            <br>
+            <br>
+            <a target="_blank" href="img/Rogue.png">
+              <img src="img/Rogue.png">
+            </a>
+            <h4 style="text-align: center">Rogue (1980)</h4>
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
-    <div class="container text-center animated fadeIn" style="font-family: Calibri">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h3>Made with</h4>
-                <img src="img/Unity_Logo.png" id="icon">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h3>Specially for</h4>
-                <img src="img/OSs_Logo.png" id="icon">
-            </div>
-        </div>
-    </div>  
-  
-    <footer class="container-fluid text-center animated slideInUp">
-      <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <h3 class="footer-title">Contact Us</h3>
-          <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
-        </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <img id="rotate-infinite" src="img/Sun_White.png">
-        </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <h3 class="footer-title">Social Media</h3>
-          <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
-          <a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a>
-          <a target="_blank" href="https://plus.google.com/" class="fa fa-google"></a>
-          <a target="_blank" href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-          <a target="_blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
-        </div>
+  <div class="container text-center animated fadeIn" style="font-family: Calibri">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h3>Made with</h4>
+          <img src="img/Unity_Logo.png" id="icon">
       </div>
-    </footer>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h3>Specially for</h4>
+          <img src="img/OSs_Logo.png" id="icon">
+      </div>
+    </div>
+  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <footer class="container-fluid text-center animated slideInUp">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h3 class="footer-title">Contact Us</h3>
+        <a class="fa fa-envelope-open" href="mailto:contact@hermitgames.com"></a>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <img id="rotate-infinite" src="img/Sun_White.png">
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h3 class="footer-title">Social Media</h3>
+        <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a target="_blank" href="https://plus.google.com/" class="fa fa-google"></a>
+        <a target="_blank" href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <a target="_blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>
