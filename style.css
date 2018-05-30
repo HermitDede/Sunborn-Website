@@ -5,6 +5,11 @@ body{
     background-color: #222222;
     font-family: Fontin-Regular;
 }
+
+h2 {
+    font-size: 36px;
+}
+
 .row p{
     text-align: justify;
     font-size: 18px;
@@ -16,6 +21,7 @@ body{
 .container{
     max-width: 90%;
 }
+
 /* Header = Navigation Bar */
 .navbar{
 margin-bottom: 0px;
@@ -120,6 +126,9 @@ color: #0f50b3;
     .row p{
         font-size: 14px;
     }
+        h2 {
+        font-size: 30px;
+    }
 }
 @media(max-width: 768px){
     .fa, .fa:active, .fa:focus{
@@ -144,6 +153,9 @@ color: #0f50b3;
     }
     .row p{
         font-size: 12px;
+    }
+        h2 {
+        font-size: 24px;
     }
 }
 
