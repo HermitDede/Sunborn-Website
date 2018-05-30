@@ -16,7 +16,6 @@ body{
 .container{
     max-width: 90%;
 }
-
 /* Header = Navigation Bar */
 .navbar{
 margin-bottom: 0px;
@@ -118,6 +117,9 @@ color: #0f50b3;
     .footer-title{
         font-size: 20px;
     }
+    .row p{
+        font-size: 14px;
+    }
 }
 @media(max-width: 768px){
     .fa, .fa:active, .fa:focus{
@@ -139,6 +141,9 @@ color: #0f50b3;
     }
     #rotate-infinite{
         width: 100px;
+    }
+    .row p{
+        font-size: 12px;
     }
 }
 
